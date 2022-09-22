@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students-Accommodation-Solution</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="logo-div">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="logo" />
+        </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto nav_list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about_us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#listings">Listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <div class="btn-div">
+          <a href="login.html" >
+            <button class="first_btn">Log In</button>
+          </a>
+          <a href="signup.html" >
+            <button class="second_btn">Sign Up</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="main">
+      <div class="fluid_div container-fluid">
+        <div class="row">
+          <div class="text_div col-lg-6 col-md-6">
+            <div>
+              <h1>
+                RENTING A <span>HOME</span> AWAY <br />
+                FROM HOME MADE <span>EASY</span>
+              </h1>
+              <p class="section1_p">
+                Get a living space anytime without having to leave your comfort zone. And also get your ideal place with minimal effort all round Zaria.
+              </p>
+            </div>
+            <div class="hidden_img">
+            <img class="img-fluid img-fluid1 img-thumbnail" src="images/room1.jpg" alt="" />
+            </div>
+            <div class="amount_div">
+              <div class="individual_amount">
+                <h2>1k+</h2>
+                <p>
+                  Premium <br />
+                  Hostels
+                </p>
+              </div>
+              <div class="individual_amount">
+                <h2>10+</h2>
+                <p>
+                  Different <br />
+                  Locations
+                </p>
+              </div>
+              <div class="individual_amount">
+                <h2>5k+</h2>
+                <p>
+                  Happy <br />
+                  Customers
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <img class="img-fluid img-fluid1 first_img img-thumbnail" src="images/room1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="menu_container">
+          <p>Find Your Home</p>
+          <div class="hero_menu">
+            <div class="input-group mb-3">
+              <button
+                class="menu_btn btn btn-outline-secondary dropdown-toggle text-nowrap"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Location
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Samaru</a></li>
+                <li><a class="dropdown-item" href="#">Congo</a></li>
+                <li><a class="dropdown-item" href="#">Wusasa</a></li>
+                <li><a class="dropdown-item" href="#">Shika</a></li>
+              </ul>
+            </div>
+
+            <div class="input-group mb-3">
+              <button
+                class="menu_btn btn btn-outline-secondary dropdown-toggle text-nowrap"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Category
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Self-con</a></li>
+                <li><a class="dropdown-item" href="#">2-bedroom</a></li>
+                <li><a class="dropdown-item" href="#">3-bedroom</a></li>
+                <li><a class="dropdown-item" href="#">4-bedroom</a></li>
+              </ul>
+            </div>
+
+            <div class="input-group mb-3">
+              <button
+                class="menu_btn btn btn-outline-secondary dropdown-toggle text-nowrap"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Property Type
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apartment</a></li>
+                <li><a class="dropdown-item" href="#">Detached</a></li>
+                <li><a class="dropdown-item" href="#">Duplex</a></li>
+                <li><a class="dropdown-item" href="#">Triplex</a></li>
+              </ul>
+            </div>
+
+            <div class="hidden_div"></div>
+            <div class="hidden_div"></div>
+            <button type="button" class="search btn text-nowrap">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="fade-2">
+
+    <section id="about_us">
+      <div class="fluid_div container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <img src="images/room4.jpg" class="img-fluid img-fluid2 second_img img-thumbnail" alt="" />
+          </div>
+          <div class="whole_div col-lg-6 col-md-6">
+            <div class="text_div section2_text">
+              <p class="about">About Us</p>
+              <h1>
+                Providing You Easy Access <br />
+                to Houses Without Much <br />
+                Hassles
+              </h1>
+              <p class="section2_p">
+                At Students Accomodation Solution, we are interested in: <br> 
+                a. Helping you secure a suitable accommodation off-campus. <br>
+                b. Protecting your interest <br>
+                c. Helping you to get houses with neat environments in zaria.
+                <br>
+                <br>
+                These are our primary jobs and they are all about you.
+              </p>
+            </div>
+            <div class="hidden_img hidden_img2">
+              <img class="img-fluid img-fluid2 img-thumbnail" src="images/room4.jpg" alt="" />
+              </div>
+              <a href="#">
+                <button class="section2_btn btn btn-md btn-dark text-nowrap">Learn More</button>
+              </a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="listings">
+      <div class="container">
+        <p class="word"><strong>New Listings</strong></p>
+        <p class="choice">Best Choice</p>
+
+        <div class="listings_row row row-cols-1 row-cols-md-3 g-4" >
+          <div class="col">
+            <div class="card">
+              <img src="images/house2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>1 Bedroom Apartment</p>
+                </h5>
+                <p class="card-text">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bayan Gidan Sarkin Yarbawa
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +2348062385867
+                  </p>
+                  <div class="prices_div text-nowrap">
+                    <p>
+                      <i class="fa-solid fa-naira-sign"></i>
+                      95,000
+                    </p>
+                    <a href="#">View Details</a>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="images/house3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>1 Bedroom Apartment</p>
+                </h5>
+                <p class="card-text">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bayan Gidan Sarkin Yarbawa
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +2348062385867
+                  </p>
+                  <div class="prices_div text-nowrap">
+                    <p>
+                      <i class="fa-solid fa-naira-sign"></i>
+                      95,000
+                    </p>
+                    <a href="#">View Details</a>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card">
+              <img src="images/house2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>1 Bedroom Apartment</p>
+                </h5>
+                <p class="card-text">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bayan Gidan Sarkin Yarbawa
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +2348062385867
+                  </p>
+                  <div class="prices_div text-nowrap">
+                    <p>
+                      <i class="fa-solid fa-naira-sign"></i>
+                      95,000
+                    </p>
+                    <a href="#">View Details</a>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="listings_btn d-grid gap-2 d-md-block">
+          <a href="#" class="text-nowrap">
+            View All Listings
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="testimonials_div">
+        <p>Our Testimonials</p>
+        <h2>What Our Valuable Clients Say</h2>
+        <img class="quote_img" src="images/quote (1).png" alt="" />
+      </div>
+
+      <div class="clients_div row">
+        <div class="col-lg-4">
+          <div class="individual_client">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              I am a 300L student of biological science, and so not entitled to accommodation. <br>
+              I didn't find it difficult to get a place and I didn't even have to pay school fees or leave my house, I did everything online via the SAS platform.
+              Great work, you have spared me a lot of stress.
+            </p>
+            <div class="client_info">
+              <div class="client_img"></div>
+              <p>
+                <strong>Moses Shaaba</strong> <br />
+                300L, Biological Science
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="individual_client">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              I am a fresh student and I don't even want to struggle for accommodation.
+              I found the perfect place for me, thanks to the students accommodation solution. I was referred by a friend, and I'm glad that I followed her advice. All thanks to Students accommodation Solution.
+              
+            </p>
+            <div class="client_info">
+              <div class="woman_img"></div>
+              <p>
+                <strong>Sally Shaaba</strong> <br />
+                100L, Computer Science
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="individual_client">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              We are 5 students from the same home, our parents preferred that we stay in the same place off campus.
+              At first it was very difficult to find a place for all 5 of us.
+              When we tried the SAS platform, it was a lot easier, an we had options to choose from in a favourable location.
+            </p>
+            <div class="client_info">
+              <div class="client_img"></div>
+              <p>
+                <strong>Shehu Abdul</strong> <br />
+                300L, Human Anatomy
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="for_carousel testimonials_div">
+      <p>Our Testimonials</p>
+      <h2>What Our Valuable Clients Say</h2>
+      <img class="quote_img" src="images/quote (1).png" alt="" />
+    </div>
+
+    <section id="testimonials_carousel">
+
+      <div
+        id="testimonial-carousel"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel_in carousel-inner">
+          <div class="carousel_text carousel-item active">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="testimonial-text">
+              I am a 300L student of biological science, and so not entitled to accommodation. <br>
+              I didn't find it difficult to get a place and I didn't even have to pay school fees or leave my house, I did everything online via the SAS platform.
+              Great work, you have spared me a lot of stress.
+            </p>
+            <img
+              class="testimonial-img"
+              src="images/man.jpg"
+              alt="man-profile"
+            />
+            <p>
+              <strong>Moses Shaaba</strong> <br />
+              300L, Biological Science
+            </p>
+          </div>
+
+          <div class="carousel_text carousel-item">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="testimonial-text">
+              I am a fresh student and I don't even want to struggle for accommodation.
+              I found the perfect place for me, thanks to the students accommodation solution. 
+            </p>
+            <img
+              class="testimonial-img"
+              src="images/woman (2).png"
+              alt="lady-profile"
+            />
+            <p>
+              <strong>Sally Shaaba</strong> <br />
+              100L, Computer Science
+            </p>
+          </div>
+
+          <div class="carousel_text carousel-item">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="testimonial-text">
+              We are 5 students from the same home, our parents preferred that we stay in the same place off campus.
+              At first it was very difficult to find a place for all 5 of us.
+              When we tried the SAS platform, it was a lot easier, and we had options to choose from in a favourable location.
+            </p>
+            <img
+              class="testimonial-img"
+              src="images/man.jpg"
+              alt="man-profile"
+            />
+            <p>
+              <strong>Shehu Abdul</strong> <br />
+              300L, Human Anatomy
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel_btn carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel_btn carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="">
+        <div class="last_section">
+          <div class="house_image_container">
+            <img src="images/house.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="last_section_text">
+            <div></div>
+            <div class="texts">
+              <h1>Get Your Home Listed as An Owner or Agent</h1>
+              <p>
+                For home owners/agents, get tenants as soon as you need them. Get Started with your email address.
+              </p>
+              <div class="input_container">
+                <input placeholder="Enter Your Email Address" type="text" />
+                <button class="text-nowrap">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="bottom-container">
+        <a class="footer-link" target="_blank" href="https://wa.me/message/HXZ263DQJMR7L1"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a class="footer-link" target="_blank" href="#"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a class="footer-link" target="_blank" href="#"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a class="footer-link" target="_blank" href="#"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <p class="copyright">© 2022 Student's Accommodation Solution.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+

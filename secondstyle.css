@@ -1,0 +1,10 @@
+/* this is the link for the font, not to be removed */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+body{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(75, 72, 72, 0.1);
+    font-family: 'Inter', sans-serif;
+  }
+  
