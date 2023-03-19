@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace | offices</title>
+    <link rel="stylesheet" href="offices.css">
+</head>
+<body>
+    
+    <!-- copy below code only -->
+
+    <div class="apartment_v">
+        <div class="apart_body">
+            <div class="img-wr">
+                <button id="prev">&LeftAngleBracket;</button>
+                <img src="images/room1.jpg" alt="" class="img">
+                <button id="nex">&RightAngleBracket;</button>
+            </div>
+            <div class="apart_pp">
+                <a href="">RENT</a>
+                <div class="apart_n">
+                    <h3>1 Bedroom Apartment </h3>
+                    <b>Price : N 102,000</b>
+                </div>
+                <a href="">See Video</a>
+            </div>
+            <div class="apart_info">
+                <p class="addr">
+                    <b>Bayan Gidan Sarkin Yarbawa, Samaru</b>
+                </p>
+                <p class="owner">
+                    Owner : <b>Alhaji Haruna Ismail</b>
+                    Phone : <b>09034556789</b>
+                </p>
+                <p class="agent">
+                    Agent : <b>Ibrahim Abdullahi</b>
+                    Phone : <b>09034556789</b>
+                </p>
+                <p class="status">
+                    Status : <b>3 Apartment Available</b>
+                </p>
+            </div>
+        </div>
+        <div class="apart_ads">
+            <div class="ads_img">
+                ADS
+            </div>
+            <div class="ads_img">
+                ADS
+            </div>
+        </div>
+    </div>
+
+    <!-- copy above code only -->
+
+    <script>
+        const prevImg = document.getElementById('prev')
+        const nexImg = document.getElementById('nex')
+        const Img = document.querySelector('.img')
+        let currentImg = 0
+        const imgs = [
+        'images/room1.jpg',
+        'images/room4.jpg',
+        'images/house.png',
+        'images/house2.jpg',
+        'images/house3.jpg',
+        ]
+         prevImg.onclick = () => {
+            currentImg--
+            if(currentImg < 0){
+                currentImg = imgs.length - 1
+            }
+            Img.src = imgs[currentImg]
+            return
+         } 
+         nexImg.onclick = () => {
+            currentImg++
+            if(currentImg > imgs.length - 1){
+                currentImg = 0
+            }
+            Img.src = imgs[currentImg]
+            return
+         } 
+    </script>
+
+</body>
+</html>

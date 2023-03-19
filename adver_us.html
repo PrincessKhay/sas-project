@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace | offices</title>
+    <link rel="stylesheet" href="offices.css">
+</head>
+<body>
+    
+    <!-- copy below code only -->
+
+    <form enctype="multipart/form-data" method="post" class="adver_us">
+        <div class="adver_header">
+            <h3>Advertise with us</h3>
+            <div class="adver_cost">
+                    COST <b>N12300.00</b>
+            </div>
+        </div>
+        <div class="adver_plan">
+            <label for="br">
+                <input type="radio" name="plan" id="br" value="bronze"> Bronze
+            </label>
+            <label for="sl">
+                <input type="radio" name="plan" id="sl" value="silver"> Silver
+            </label>
+            <label for="di">
+                <input type="radio" name="plan" id="di" value="diamond"> Diamond
+            </label>
+        </div>
+        <div class="adver_b">
+            <div class="adver_duration">
+                <h3>Duration</h3>
+                <label for="w1">
+                    <input type="radio" name="week" id="w1" value="w1"> 1 week 
+                </label>
+                <label for="w2">
+                    <input type="radio" name="week" id="w2" value="w2"> 2 week 
+                </label>
+                <label for="w3">
+                    <input type="radio" name="week" id="w3" value="w3"> 3 week 
+                </label>
+                <label for="w4">
+                    <input type="radio" name="week" id="w4" value="w4"> 4 week 
+                </label>
+            </div>
+            <div class="adver_imgs">
+                <h3>upload Image(s)</h3>
+                <div class="adver_imgs_upload_div" id="adver_imgs_upload_div">
+                    <p>Drop Image here or <button type="button" id="bimg">click</button> to select an Image</p>
+                </div>
+                <input type="file" name="img" id="img" hidden>
+                <p>Image Quality : Not less than 2MB</p>
+                <p>Image type : Jpeg, PNG</p>
+                <button type="submit">proceed to paymeny</button>
+            </div>
+    
+        </div>
+    </form>
+
+    <!-- copy above code only -->
+
+    <!-- script -->
+    <script>
+        const dropDiv = document.getElementById('adver_imgs_upload_div')
+        const InputFile = document.getElementById('img')
+
+        dropDiv.ondragover = (e) => {
+            e.preventDefault()
+        }
+        dropDiv.ondrop = (e) => {
+            e.preventDefault()
+            InputFile.file = e.dataTransfer.files[0]
+        }
+        document.getElementById('bimg').onclick = () => InputFile.click()
+    </script>
+</body>
+</html>

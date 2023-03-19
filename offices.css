@@ -1,0 +1,257 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pg-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pg-title > h1{
+    background-color: rgb(3, 91, 150);
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.wr-room{
+    min-width: 400px;
+}
+.wr-room > .img{
+    width: 100%;
+    height: 350px;
+    background-color:rgb(85, 85, 85) ;
+    object-fit: cover;
+}
+.about-room{
+    padding: 0 20px;
+}
+.r-price, .r-title, .r-address{
+    color: rgb(3, 91, 150);
+    margin: 3px auto;
+}
+.wr-room-ft{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 10px;
+}
+.wr-room-ft a{
+    text-decoration: none;
+
+}
+.wr-room-ft .rent{
+    background-color: rgb(61, 61, 61);
+    padding: 3px 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+.wr-room .explore{
+    box-shadow: 0px 2px 3px rgb(49, 49, 49);
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+}
+
+.adver_us{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.adver_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.adver_header h3{
+    color: rgb(3, 91, 150);
+}
+.adver_plan{
+    width: 100%;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    gap: 10px;
+    /* padding-left: 30px; */
+}
+.adver_plan input, .adver_duration input{
+    width: 24px;
+    height: 24px;
+}
+.adver_b{
+    width: 100%;
+    display: flex;
+    /* padding-left: 30px; */
+    gap: 40px;
+    justify-content: space-between;
+}
+.adver_duration{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.adver_duration > label{
+    font-size: 20px;
+}
+.adver_imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+.adver_imgs > p{
+    margin: 0;
+}
+.adver_imgs > button{
+    padding: 10px 15px;
+    background-color: rgb(3, 91, 150);
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.adver_imgs_upload_div{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(230, 230, 230, 0.623);
+    border-radius: 5px;
+    border: 2px solid white;
+    outline: 2px solid rgb(30, 180, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apartment_v{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.apart_ads{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+}
+.ads_img{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(3, 91, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.apart_body{
+    width: 70%;
+}
+.apart_body .img-wr{
+    width: 100%;
+    position: relative;
+}
+.apart_body .img-wr button{
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: rgba(255, 254, 254, 0.589);
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+
+}
+.apart_body .img-wr button:last-of-type{
+    right: 0;
+}
+.apart_body .img{
+    width: 100%;
+    height: 400px;
+    background-color: lightgray;
+}
+.apart_pp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.apart_pp > a{
+    background-color: rgb(3, 91, 150);
+    padding: 10px;
+    height: fit-content;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.apart_n{
+    text-align: center;
+}
+.apart_n > h3{
+    color: rgb(3, 91, 150);
+    margin: 0;
+    font-weight: 700;
+}
+.apart_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.apart_info > p{
+    margin: 0;
+    font-size: large;
+}
+.apart_info > p > b{
+    color: rgb(3, 91, 150);
+}
+@media screen and (max-width:375px) {
+    .adver_us{
+        width: 100%;
+        /* padding: 10px; */
+    }
+    .adver_header{
+        flex-direction: column;
+    }
+    .adver_b{
+        flex-direction: column;
+    }
+    .adver_imgs_upload_div{
+        width: 100%;
+    }
+    .adver_plan{
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+    .pg-title > h1{
+        text-align: center;
+    }
+    .wr-room{
+        min-width: 100%;
+    }
+    .about-room{
+        padding: 0;
+    }
+    .explore{
+        width: 50%;
+        text-align: center;
+        background-color: rgb(3, 91, 150);
+        color: white;
+    }
+}
