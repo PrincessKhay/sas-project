@@ -222,6 +222,12 @@
     color: rgb(3, 91, 150);
 }
 @media screen and (max-width:375px) {
+    .apart_ads{
+        display: none;
+    }
+    .apart_body{
+        width: 100%;
+    }
     .adver_us{
         width: 100%;
         /* padding: 10px; */
